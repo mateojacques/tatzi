@@ -2,106 +2,390 @@
 export const USER_LOCATION = 'Alejandro Korn, Buenos Aires';
 
 export const TATTOO_STYLES = [
-  {id: 1, name: 'Realismo', slug: 'realism'},
-  {id: 2, name: 'Blackwork', slug: 'blackwork'},
-  {id: 3, name: 'Tradicional', slug: 'traditional'},
+  {id: 2001, name: 'Blackwork', slug: 'blackwork'},
+  {id: 2002, name: 'Realismo', slug: 'realism'},
+  {id: 2003, name: 'Tradicional', slug: 'traditional'},
+  // {id: 2004, name: 'Microrealismo', slug: 'microrealism'},
+  // {id: 2005, name: 'Minimalismo', slug: 'minimalism'},
 ];
 
 export const TATTOO_ARTISTS = [
   {
-    id: 1001,
-    name: 'Lukas Tattoo',
-    username: 'lukastattoo',
+    id: '6708cd0d-c6e6-5738-a084-2354efeae847',
+    name: 'Astaroth Tattoos',
+    username: 'astarothtattoos',
     tattooStyles: [
-      {id: 2001, name: 'Blackwork'},
-      {id: 2003, name: 'Tradicional'},
+      {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
+      {id: 'a50bdbae-0006-5c7c-96f6-9910bb2262d7', name: 'Realismo'},
+      {id: '8834d405-b595-5f72-996a-519f5bfd9371', name: 'Minimalismo'},
     ],
     location: {
-      city: 'Burzaco',
-    },
-    calification: {
-      average: 4.5,
-      reviewsQuantity: 10,
-    },
-    profileImage: 'https://i.imgur.com/VfgpIyq.png',
-    works: [
-      {
-        id: 3001,
-        image: 'https://i.imgur.com/pGMSCDU.png',
-      },
-      {
-        id: 3002,
-        image: 'https://i.imgur.com/WjLH9z3.png',
-      },
-      {
-        id: 3003,
-        image: 'https://i.imgur.com/zQWKblf.png',
-      },
-    ],
-  },
-  {
-    id: 1002,
-    name: 'Hell Studio',
-    username: 'hellstudio',
-    tattooStyles: [
-      {id: 2002, name: 'Realismo'},
-      {id: 2004, name: 'Microrrealismo'},
-    ],
-    location: {
-      city: 'Adrogué',
+      city: 'San Justo',
     },
     calification: {
       average: 5,
       reviewsQuantity: 25,
     },
-    profileImage: 'https://i.imgur.com/lVMexex.png',
+    profileImage: 'https://i.imgur.com/edK6g4k.jpeg',
     works: [
       {
-        id: 3011,
-        image: 'https://i.imgur.com/ggbzwji.png',
+        id: 'bf8065ee-1cb7-5fe5-a5eb-cbd62a8206c0',
+        image: 'https://i.imgur.com/pUL46rk.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
       },
       {
-        id: 3012,
-        image: 'https://i.imgur.com/pq0MvY0.png',
+        id: 'a2face45-a031-56e1-ae28-be5886badc81',
+        image: 'https://i.imgur.com/BrsICkA.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
       },
       {
-        id: 3013,
-        image: 'https://i.imgur.com/FjGe23H.png',
+        id: '32edb26e-ffa0-5575-ae1d-52fafff2e5ab',
+        image: 'https://i.imgur.com/dIfQnqR.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
+      },
+      {
+        id: '38381748-cc91-59f2-a319-bf029ca25257',
+        image: 'https://i.imgur.com/lIba6NT.jpeg',
+        style: {id: 'a50bdbae-0006-5c7c-96f6-9910bb2262d7', name: 'Realismo'},
+      },
+      {
+        id: '10395818-5710-5734-a5fb-d2d966dcd3ed',
+        image: 'https://i.imgur.com/7JHhujq.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: 'f88d19ba-42f7-5915-8771-da8a3d9abaf8',
+        image: 'https://i.imgur.com/MY6aRZb.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: 'd892259e-2a4b-5cb9-a369-e6a176fb39c8',
+        image: 'https://i.imgur.com/x8xJWp9.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: '4bbd710a-6be7-59d5-812b-14ac0673a8b8',
+        image: 'https://i.imgur.com/OJTQXoS.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: 'ddc0fb92-8a78-516b-a1fb-ef38f78fb46a',
+        image: 'https://i.imgur.com/tZWVZGL.jpeg',
+        style: {id: 'a50bdbae-0006-5c7c-96f6-9910bb2262d7', name: 'Realismo'},
       },
     ],
+    designs: [],
+    workplace: null,
   },
   {
-    id: 1003,
-    name: 'Ink Master',
-    username: 'inkmaster',
+    id: 'ae6ee1e8-c88e-58ba-bf79-25f5e02d9101',
+    name: 'Shunga Tattoo',
+    username: 'shungatattoo',
     tattooStyles: [
-      {id: 2001, name: 'Blackwork'},
-      {id: 2002, name: 'Realismo'},
+      {id: '9d778c10-8933-5639-95f5-03eafc7913b9', name: 'Tradicional'},
+      {id: '8834d405-b595-5f72-996a-519f5bfd9371', name: 'Minimalismo'},
+      {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
     ],
     location: {
-      city: 'Buenos Aires',
+      city: 'Isidro Casanova',
+    },
+    calification: {
+      average: 4.5,
+      reviewsQuantity: 10,
+    },
+    profileImage: 'https://i.imgur.com/Hsd7D4v.jpeg',
+    works: [
+      {
+        id: 'ef7c3244-4551-5e20-aa3f-d8d7675b01b3',
+        image: 'https://i.imgur.com/afDhBpS.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: 'd9b4f555-ddf2-5c91-9651-c60494f0953b',
+        image: 'https://i.imgur.com/lE3ZsYm.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: 'cd249f18-40eb-58ab-93f4-ebfd2531a671',
+        image: 'https://i.imgur.com/7KV3eAe.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: '3408e277-218b-5a3d-8cf8-ae2e9c2ff9c0',
+        image: 'https://i.imgur.com/qvq11AA.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: 'b46a68cf-8ae6-59a7-a62e-4393e6d2f09a',
+        image: 'https://i.imgur.com/xfhTOev.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: '2d018dce-922c-504d-ac70-40be67f45db0',
+        image: 'https://i.imgur.com/v8ABm8i.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: '99ac193b-a497-5131-8f1a-1c918f59886a',
+        image: 'https://i.imgur.com/V2Z0gqd.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: '67999570-7009-58a2-ac27-27d628e1ee08',
+        image: 'https://i.imgur.com/RUYaIHT.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: '7052d7d8-c643-542c-8d04-04e4f2916020',
+        image: 'https://i.imgur.com/5YJ54Xw.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: 'ae3e7a22-cbcb-51c1-96b1-f4d69d8e1885',
+        image: 'https://i.imgur.com/HiLbVZl.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: '62b24fdd-1eb6-509a-8dca-f2220a09cd46',
+        image: 'https://i.imgur.com/ulzaRO6.jpeg',
+        style: {
+          id: '8834d405-b595-5f72-996a-519f5bfd9371',
+          name: 'Minimalismo',
+        },
+      },
+      {
+        id: '3fc02b8b-fadf-55e1-a9ba-5de22d3226bb',
+        image: 'https://i.imgur.com/njZguy2.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
+      },
+    ],
+    designs: [
+      {
+        id: '78aebcce-a978-5909-b435-5f6a06ea4d4d',
+        image: 'https://i.imgur.com/tbhpaee.jpeg',
+      },
+      {
+        id: 'c916050d-080e-5599-8633-1ddeb4368576',
+        image: 'https://i.imgur.com/hjZMMH6.jpeg',
+      },
+      {
+        id: 'e753f190-3f6a-5689-8462-706a5f4f78d8',
+        image: 'https://i.imgur.com/TkRy9lZ.jpeg',
+      },
+      {
+        id: '13f647fd-6953-52c5-9a26-0287aed6ea11',
+        image: 'https://i.imgur.com/eGYtbM4.jpeg',
+      },
+      {
+        id: '016e1f07-3555-5356-8bd8-320d4b44fb93',
+        image: 'https://i.imgur.com/gPv3AsY.jpeg',
+      },
+      {
+        id: 'b82f1a29-f165-5944-8ae3-2c8041829818',
+        image: 'https://i.imgur.com/qPdpjIa.jpeg',
+      },
+      {
+        id: 'b779006b-52db-5a53-960a-594aa4987217',
+        image: 'https://i.imgur.com/lMX22QK.jpeg',
+      },
+    ],
+    workplace: {
+      id: 'fb91a586-ce08-548e-a494-410a1bf3994e',
+      image: 'https://i.imgur.com/ZHyFXSd.jpeg',
+    },
+  },
+  {
+    id: 'eea7ea74-0bda-5198-ad32-112161bfff87',
+    name: 'Maghui Calavera',
+    username: 'maghuicalaveratattoo',
+    tattooStyles: [
+      {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      {id: 'fb80dcb6-33ad-5b61-bf8e-92b34eff903e', name: 'Blackwork'},
+      {id: 'a9dbc09a-36d3-5283-9a74-7202fc3c4989', name: 'Realismo'},
+      {id: '9d778c10-8933-5639-95f5-03eafc7913b9', name: 'Tradicional'},
+    ],
+    location: {
+      city: 'Temperley',
     },
     calification: {
       average: 4.8,
       reviewsQuantity: 15,
     },
-    profileImage: 'https://i.imgur.com/8gP6QYc.png',
+    profileImage: 'https://i.imgur.com/wAjqya4.jpeg',
     works: [
       {
-        id: 3021,
-        image: 'https://i.imgur.com/N3HvhWU.png',
+        id: 'ee2a01e8-5f0b-5c4b-b64e-ad12a75e8204',
+        image: 'https://i.imgur.com/EsjArrs.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
       },
       {
-        id: 3022,
-        image: 'https://i.imgur.com/VrS1r6l.png',
+        id: '2c58c68b-0a72-561e-a7c0-5858a70ff8af',
+        image: 'https://i.imgur.com/GMQINO5.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
       },
       {
-        id: 3023,
-        image: 'https://i.imgur.com/djKcoRj.png',
+        id: '6553c44c-e7ac-5508-9dbb-83770409ae60',
+        image: 'https://i.imgur.com/YvAZZhp.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '87fe9a8c-d1bd-53d6-9e85-e06086c92d48',
+        image: 'https://i.imgur.com/1dGkSOH.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '255555ca-7508-5b41-b584-7cf308cedff0',
+        image: 'https://i.imgur.com/Wl0waAd.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '212278d8-d910-5037-a290-36f6ab78e78d',
+        image: 'https://i.imgur.com/UQEb8pU.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: '455a95ba-0382-58d1-8527-172dc19e3ef5',
+        image: 'https://i.imgur.com/B6VQkYk.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: 'ab87c5c9-6245-5cc4-9bea-3c8fe005a7cb',
+        image: 'https://i.imgur.com/xyKkb8j.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
+      },
+      {
+        id: '20ee8c40-9d5f-583a-a4d5-1d0142fe2d75',
+        image: 'https://i.imgur.com/KXoSn5C.jpeg',
+        style: {
+          id: '9d778c10-8933-5639-95f5-03eafc7913b9',
+          name: 'Tradicional',
+        },
+      },
+      {
+        id: '677430e8-83d4-5ab4-93ae-eb4339ddc338',
+        image: 'https://i.imgur.com/ll8MZD9.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '77030a44-6261-53e9-ba30-8a86b972cefb',
+        image: 'https://i.imgur.com/5p12SUA.jpeg',
+        style: {id: '7cd888df-8f0d-5bc1-b60c-76c745b8011d', name: 'Blackwork'},
+      },
+      {
+        id: 'e43a2ba6-5e48-5335-b8e4-6aebfa27b1a8',
+        image: 'https://i.imgur.com/lZmcUaG.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: 'fc042ce7-9266-5410-86b7-5b0fb1f98325',
+        image: 'https://i.imgur.com/NINyMlm.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: 'cb8da347-62d8-5ab4-ba6f-5f1bf730c041',
+        image: 'https://i.imgur.com/YN86Pqg.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: 'ecca8dea-6c2b-5d34-aec3-9c8f9c645160',
+        image: 'https://i.imgur.com/DseK1Do.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '39240d70-8b5c-58a2-918f-b4b24897df9c',
+        image: 'https://i.imgur.com/WFu2TKo.jpeg',
+        style: {id: 'a9dbc09a-36d3-5283-9a74-7202fc3c4989', name: 'Realismo'},
+      },
+      {
+        id: '0b3c329a-ae79-5550-9c06-81b9f7ce1d6b',
+        image: 'https://i.imgur.com/fqflkmo.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
+      },
+      {
+        id: '122e652e-055c-5d4b-8f00-f6760d90315a',
+        image: 'https://i.imgur.com/9CHw0Es.jpeg',
+        style: {id: 'a9dbc09a-36d3-5283-9a74-7202fc3c4989', name: 'Realismo'},
+      },
+      {
+        id: 'a44bf77b-0bce-5996-bd39-4678093b3626',
+        image: 'https://i.imgur.com/dxDCOHS.jpeg',
+        style: {id: 'aaf90eaa-32df-5e04-a165-b07c466b9601', name: 'Anime'},
       },
     ],
+    designs: [
+      {
+        id: '0070d6eb-5c6f-5b3e-b25e-9a8e097b5677',
+        image: 'https://i.imgur.com/RdJOhlm.jpeg',
+      },
+      {
+        id: '81ccc48e-b277-58f5-9b22-a4e1547614b3',
+        image: 'https://i.imgur.com/gpmdTTk.jpeg',
+      },
+      {
+        id: '3e788926-87b3-5045-b15c-50b618b712df',
+        image: 'https://i.imgur.com/0Xqpavk.jpeg',
+      },
+      {
+        id: '21706834-bca5-50e4-b3cd-0c4a08ddc842',
+        image: 'https://i.imgur.com/CfkVrLz.jpeg',
+      },
+      {
+        id: '6c27dba0-37d5-5193-90d2-0998a0495e38',
+        image: 'https://i.imgur.com/wvi2Fks.jpeg',
+      },
+      {
+        id: 'cc8a7027-bc3c-566d-8ad6-68b14fd3d13c',
+        image: 'https://i.imgur.com/cUYh3ig.jpeg',
+      },
+    ],
+    workplace: null,
   },
-  {
+  /* {
     id: 1004,
     name: 'Ink Dreams',
     username: 'inkdreams',
@@ -627,5 +911,5 @@ export const TATTOO_ARTISTS = [
         image: 'https://i.imgur.com/r0jV52J.png',
       },
     ],
-  },
+  }, */
 ];
