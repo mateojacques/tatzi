@@ -8,9 +8,9 @@ import {
   View,
 } from 'react-native';
 import {TATTOO_ARTISTS} from '../utils/mock';
-import {divideArrayInHalf, shuffleArray} from '../utils/helpers';
-import {SEMIBOLD_FONT} from '../utils/constants';
-import DesignsRow from '../components/designs/DesignsRow';
+import {shuffleArray} from '../utils/helpers';
+import {DESIGN_BORDER_RADIUS, SEMIBOLD_FONT} from '../utils/constants';
+import AutoHeightImage from 'react-native-auto-height-image';
 
 const DesignsScreen = () => {
   const [designs, setDesigns] = useState<any[]>([]);
@@ -26,9 +26,8 @@ const DesignsScreen = () => {
       },
       [],
     );
-    const sortedDesigns = shuffleArray(fetchedDesigns);
-    const [firstRow, secondRow] = divideArrayInHalf(sortedDesigns);
-    setDesigns([firstRow, secondRow]);
+    const shuffledDesigns = shuffleArray(fetchedDesigns);
+    setDesigns(shuffledDesigns);
   };
 
   const TABS = [
@@ -65,11 +64,19 @@ const DesignsScreen = () => {
       </View>
       <View style={{flexShrink: 1}}>
         <ScrollView contentContainerStyle={styles.designsContainer}>
-          <View style={styles.rowContainer}>
-            {designs.map((row, index) => (
-              <DesignsRow index={index} row={row} />
-            ))}
-          </View>
+          {designs.map((design: any) => (
+            <View style={styles.designContainer}>
+              <AutoHeightImage
+                key={design.id}
+                source={{
+                  uri: design.image,
+                }}
+                width={Dimensions.get('window').width / 2 - 30}
+                style={styles.design}
+                resizeMethod="resize"
+              />
+            </View>
+          ))}
         </ScrollView>
       </View>
     </View>
@@ -104,11 +111,15 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
   },
+  design: {
+    borderRadius: DESIGN_BORDER_RADIUS,
+    flex: 1,
+  },
+  designContainer: {},
   designsContainer: {
     padding: 15,
-  },
-  rowContainer: {
-    flexDirection: 'row',
     gap: 15,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 });

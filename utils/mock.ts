@@ -913,3 +913,25 @@ export const TATTOO_ARTISTS = [
     ],
   }, */
 ];
+
+export const USER = {
+  id: '04718e71-b11f-52cb-b351-61307f550a25',
+  name: 'Mateo Jacques',
+  description: 'I like ninja tattoos',
+  username: 'mateojacques',
+  followersCount: 10,
+  followingCount: 5,
+  profileImage:
+    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/38c7b54f-3686-46cf-a670-1ce92c38d44f/dgb12ck-7a63fc3c-1d65-496f-9f14-be197a7abcdc.png/v1/fit/w_828,h_1192,q_70,strp/detective_winslow__oc__by_shinratenseiart_dgb12ck-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg0NCIsInBhdGgiOiJcL2ZcLzM4YzdiNTRmLTM2ODYtNDZjZi1hNjcwLTFjZTkyYzM4ZDQ0ZlwvZGdiMTJjay03YTYzZmMzYy0xZDY1LTQ5NmYtOWYxNC1iZTE5N2E3YWJjZGMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hflpoQyDnHaIMyDzH6EmaBcvZstcr1supSnYUdK_TRc',
+  favArtists: [
+    '6708cd0d-c6e6-5738-a084-2354efeae847',
+    'ae6ee1e8-c88e-58ba-bf79-25f5e02d9101',
+  ],
+  pinned: [
+    'bf8065ee-1cb7-5fe5-a5eb-cbd62a8206c0',
+    '10395818-5710-5734-a5fb-d2d966dcd3ed',
+    'ddc0fb92-8a78-516b-a1fb-ef38f78fb46a',
+    '39240d70-8b5c-58a2-918f-b4b24897df9c',
+    '122e652e-055c-5d4b-8f00-f6760d90315a',
+  ],
+};
