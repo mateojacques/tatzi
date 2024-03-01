@@ -18,6 +18,7 @@ const getScreenTabOptions = ({label, icon}: any): any => ({
 const Navigation = () => (
   <Tab.Navigator
     barStyle={{backgroundColor: '#111'}}
+    labeled={false}
     activeColor="#EF5350"
     inactiveColor="#fff"
     activeIndicatorStyle={{display: 'none'}}>
