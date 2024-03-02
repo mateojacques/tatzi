@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text, StyleSheet, Pressable, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {REGULAR_FONT} from '../../utils/constants';
+import {ACCENT, REGULAR_FONT, TEXT_DARK} from '../../utils/constants';
 import {Image} from '@rneui/themed';
 import {Dimensions} from 'react-native';
 
@@ -50,7 +50,7 @@ const TattooArtistCard = ({
           <Icon
             name={saved ? 'bookmark' : 'bookmark-outline'}
             size={20}
-            color={saved ? '#EF5350' : '#111'}
+            color={saved ? ACCENT : TEXT_DARK}
             onPress={() => setSaved(!saved)}
           />
           <Icon

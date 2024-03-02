@@ -4,6 +4,7 @@ import HomeScreen from './screens/HomeScreen';
 import DesignsScreen from './screens/DesignsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import FeedScreen from './screens/FeedScreen';
+import {ACCENT} from './utils/constants';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -19,7 +20,7 @@ const Navigation = () => (
   <Tab.Navigator
     barStyle={{backgroundColor: '#111'}}
     labeled={false}
-    activeColor="#EF5350"
+    activeColor={ACCENT}
     inactiveColor="#fff"
     activeIndicatorStyle={{display: 'none'}}>
     <Tab.Screen

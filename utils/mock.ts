@@ -927,11 +927,23 @@ export const USER = {
     '6708cd0d-c6e6-5738-a084-2354efeae847',
     'ae6ee1e8-c88e-58ba-bf79-25f5e02d9101',
   ],
-  pinned: [
-    'bf8065ee-1cb7-5fe5-a5eb-cbd62a8206c0',
-    '10395818-5710-5734-a5fb-d2d966dcd3ed',
-    'ddc0fb92-8a78-516b-a1fb-ef38f78fb46a',
-    '39240d70-8b5c-58a2-918f-b4b24897df9c',
-    '122e652e-055c-5d4b-8f00-f6760d90315a',
-  ],
+  pinned: {
+    tattoos: [
+      'bf8065ee-1cb7-5fe5-a5eb-cbd62a8206c0',
+      '10395818-5710-5734-a5fb-d2d966dcd3ed',
+      'ddc0fb92-8a78-516b-a1fb-ef38f78fb46a',
+      '39240d70-8b5c-58a2-918f-b4b24897df9c',
+      '122e652e-055c-5d4b-8f00-f6760d90315a',
+    ],
+    designs: [
+      'c916050d-080e-5599-8633-1ddeb4368576',
+      '13f647fd-6953-52c5-9a26-0287aed6ea11',
+      'b82f1a29-f165-5944-8ae3-2c8041829818',
+      'b779006b-52db-5a53-960a-594aa4987217',
+    ],
+    artists: [
+      'eea7ea74-0bda-5198-ad32-112161bfff87',
+      '6708cd0d-c6e6-5738-a084-2354efeae847',
+    ],
+  },
 };
