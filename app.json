@@ -1,4 +1,9 @@
 {
-  "name": "tatzi",
-  "displayName": "tatzi"
+  "expo": {
+    "name": "tatzi",
+    "slug": "tatzi",
+    "version": "0.3.0",
+    "platforms": ["ios", "android"],
+    "sdkVersion": "54.0.0"
+  }
 }
